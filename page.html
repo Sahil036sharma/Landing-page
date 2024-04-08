@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="page.css">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="White_shade">
+
+        </div>
+        <nav>
+            <img src="/logo.png" width="130px">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+
+            <i class="fa fa-bars" class="toggle"></i>
+        </nav>
+
+        <main>
+            <div class="content">
+                <h2>The Cheese Decker</h2><br>
+                <h3>Fastest Food For,Instant Hunger</h3>
+                <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos quos, dolores a quas voluptas velit libero dolorum asperiores mollitia at voluptatem! Ea facilis officia soluta perspiciatis obcaecati, aperiam impedit doloremque.</b></p>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+
+                <button>Order Now</button>
+
+            </div>
+             
+            <div class="image">
+                <img src="photoburger.png" alt="" width="1400" height="380px">
+                <h4></h4>
+            </div>
+            
+        </main>
+
+        <section class="social">
+            <div class="back">
+                <p>Back</p>
+            </div>
+
+            <div class="social_icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-dribbble"></i>
+
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+
+        let toggle = document.querySelector("nav .fa-bars");
+        let navbar = document.querySelector("nav ul");
+
+        toggle.onclick=()=>{
+            navbar.classList.toggle("show");
+        }
+
+    </script>
+</body>
+</html>
